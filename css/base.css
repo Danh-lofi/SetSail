@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+   
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --text-color: #505050;
+    --title-color: #212121;
+    --white-color: #FFFFFF;
+    --primary-color: #3FD0D4;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
