@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./font-icon/fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="../css/gridsystem.css">
     <link rel="stylesheet" href="../css/base.css">
@@ -22,10 +25,10 @@
                         <img class="header-nav__logo-img" src="./img/logo.png" alt="">
                     </div>
 
-                    <div class="header-nav__menu col l-8">
+                    <div class="header-nav__menu col l-8" >
                         <ul class="header-nav__list">
-                            <li class="header-nav__item item-current"><a href="#" class="header-nav__link">Home<i class="header-nav__link-arrow"></i></a>
-                                <div class="header-nav__submenu">
+                            <li class="header-nav__item item-current"  ><a href="#" class="header-nav__link">Home<i class="header-nav__link-arrow"></i></a>
+                                <div class="header-nav__submenu" id="submenu-home">
                                         <ul class="header-nav__submenu-list">
                                             <li class="header-submenu__item"><a href="#" class="header-submenu__link">Travel Agency<i class="header-nav__link-arrow"></i></a></li>
                                             <li class="header-submenu__item item-current"><a href="#" class="header-submenu__link">Winter Holidays<i class="header-nav__link-arrow"></i></a></li>
@@ -41,7 +44,7 @@
                                 </div>
                             </li>
                             <li class="header-nav__item"><a href="#" class="header-nav__link">Pages  <i class="header-nav__link-arrow"></i></a>
-                                <div class="header-nav__submenu">
+                                <div class="header-nav__submenu" id="submenu-page">
                                     <ul class="header-nav__submenu-list">
                                         <li class="header-submenu__item"><a href="#" class="header-submenu__link">About Us<i class="header-nav__link-arrow"></i></a></li>
                                         <li class="header-submenu__item"><a href="#" class="header-submenu__link">What We Offer<i class="header-nav__link-arrow"></i></a></li>
@@ -55,7 +58,7 @@
                                 </div>
                             </li>
                             <li class="header-nav__item"><a href="#" class="header-nav__link">Destinations <i class="header-nav__link-arrow"></i></a>
-                                <div class="header-nav__submenu">
+                                <div class="header-nav__submenu" id="submenu-destinations">
                                 
                                     <ul class="header-nav__submenu-list">
                                         <li class="header-submenu__item"><a href="#" class="header-submenu__link">Destinations List<i class="header-nav__link-arrow"></i></a></li>
@@ -65,7 +68,7 @@
                                 </div>
                             </li>
                             <li class="header-nav__item"><a href="#" class="header-nav__link">Tours <i class="header-nav__link-arrow"></i></a>
-                                <div class="header-nav__submenu">
+                                <div class="header-nav__submenu" id="submenu-tour">
                                 
                                     <ul class="header-nav__submenu-list">
                                         <li class="header-submenu__item"><a href="#" class="header-submenu__link">Standard List<i class="header-nav__link-arrow"></i></a></li>
@@ -76,7 +79,7 @@
                                 </div>
                             </li>
                             <li class="header-nav__item"><a href="#" class="header-nav__link">Blog <i class="header-nav__link-arrow"></i></a>
-                                <div class="header-nav__submenu">
+                                <div class="header-nav__submenu" id="submenu-blog">
                                     <ul class="header-nav__submenu-list">
                                         <li class="header-submenu__item"><a href="#" class="header-submenu__link">Blog Masonry<i class="header-nav__link-arrow"></i></a></li>
                                         <li class="header-submenu__item"><a href="#" class="header-submenu__link">Block Standard <i class="header-submenu__icon fas fa-chevron-right"></i><i class="header-nav__link-arrow"></i></a>
@@ -102,8 +105,8 @@
                                 </div>
                             </li>
                             <li class="header-nav__item"><a href="#" class="header-nav__link">Shop <i class="header-nav__link-arrow"></i></a>
-                                <div class="header-nav__submenu">
-                                    <ul class="header-nav__submenu-list">
+                                <div class="header-nav__submenu" id="submenu-shop">
+                                    <ul class="header-nav__submenu-list" >
                                         <li class="header-submenu__item"><a href="#" class="header-submenu__link">Product List<i class="header-nav__link-arrow"></i></a></li>
                                         <li class="header-submenu__item"><a href="#" class="header-submenu__link">Product Single <i class="header-nav__link-arrow"></i></a></li>
                                         <li class="header-submenu__item"><a href="#" class="header-submenu__link">Product Layout <i class="header-submenu__icon fas fa-chevron-right"></i><i class="header-nav__link-arrow"></i></a>
@@ -125,30 +128,249 @@
                                 </div>
                             </li>
                             <li class="header-nav__item"><a href="#" class="header-nav__link">Elements <i class="header-nav__link-arrow"></i></a>
-                                <div class="header-nav__item-outer">
+                                <div class="header-nav__item-outer" id="submenu-outer">
                                     <div class="inner">
-                                        
                                             <ul class="header-item-outer__list">
-                                                <li class="header-submenu__item item-current"><a href="" class="header-submenu__link">Featured<i class="header-nav__link-arrow"></i></a></li>
-                                                <li class="header-submenu__item item-current"><a href="" class="header-submenu__link">Presentation<i class="header-nav__link-arrow"></i></a></li>
-                                                <li class="header-submenu__item item-current"><a href="" class="header-submenu__link">Classic<i class="header-nav__link-arrow"></i></a></li>
-                                                <li class="header-submenu__item item-current"><a href="" class="header-submenu__link">Typography<i class="header-nav__link-arrow"></i></a></li>
+                                                <li class="header-submenu__item item-current"><a href="" class="header-submenu__link header-item-outer__link">Featured<i class="header-nav__link-arrow"></i></a>
+                                                    <ul class="header-item-outer-submenu">
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Tour List<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Tour Carousel<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Tours Filter<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Destination With Tours<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Destination List<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Destination Fullscreen Slider<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Fullscreen Sections<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Reviews Carousel<i class="header-nav__link-arrow"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="header-submenu__item item-current"><a href="" class="header-submenu__link header-item-outer__link">Presentation<i class="header-nav__link-arrow"></i></a>
+                                                    <ul class="header-item-outer-submenu">
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Team<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Blog List<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Shop List<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Testimonials <i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Banner <i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Clients <i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Parallax Section<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Video Button<i class="header-nav__link-arrow"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="header-submenu__item item-current"><a href="" class="header-submenu__link header-item-outer__link">Classic<i class="header-nav__link-arrow"></i></a>
+                                                    <ul class="header-item-outer-submenu">
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Accordions<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Tabs<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Buttons<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Google Maps <i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Contact Form <i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Progress Bar<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Countdown<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Counter<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Call to Action<i class="header-nav__link-arrow"></i></a></li>  
+                                                    </ul>
+                                                </li>
+                                                <li class="header-submenu__item item-current"><a href="" class="header-submenu__link header-item-outer__link">Typography<i class="header-nav__link-arrow"></i></a>
+                                                    <ul class="header-item-outer-submenu">
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Headings<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Columns<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Section Tilte<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Blockquote<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Dropcaps <i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Highlights<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Icon with text<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Separators<i class="header-nav__link-arrow"></i></a></li>
+                                                        <li class="header-outer__item"><a href="" class="header-submenu__link">Custom Font<i class="header-nav__link-arrow"></i></a></li>
+                                                        
+                                                    </ul>
+                                                </li>
                                             </ul>
                                        
-
+                                        
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="header-nav__icon col l-2">
-
+                    <div class="header-nav__right col l-2">
+                        <ul class="header-nav-right__list-icon">
+                            <li class="header-nav-right__item"><i class="header-nav-right__icon header-nav__cart fas fa-shopping-cart"></i>
+                                <div class="header-nav-cart__product">
+                                    <span class="no-product">No product in the cart.</span>
+                                </div>
+                            </li>
+                            <li class="header-nav-right__item"><i class="header-nav-right__icon header-nav__search fas fa-search" id="modal-open"></i>
+                            </li>
+                            <li class="header-nav-right__item"><i class="header-nav-right__icon header-nav__bars fas fa-bars" id="asideOpen"></i></li>
+                        </ul>
                     </div>
 
                 </div>
             </div>
+
+            
+                <div class="slider-container">
+                    <div class="sliders">
+                        <img src="./img/skiing-slider-img-1.jpg" class="sliders-img" alt=""></img>
+                        <div class="slider-content">
+                            <h3 class="slider-layer1" style="font-family: 'Satisfy', cursive;">From Alps</h3>
+                            <h2 class="slider-layer2">Snow Adventure</h2>
+                            <p class="slider-layer3">Lorem ipsum dolor sit amet consectetur adipiscing elit. aenean ac interdum nisi. sed in consequat mi</p>
+                        </div>
+                    </div>
+
+                    <div class="sliders">
+                        <img src="./img/skiing-slider-img-2.jpg" class="sliders-img" alt=""></img>
+                        <div class="slider-content">
+                            <h3 class="slider-layer1" style="font-family: 'Satisfy', cursive;">Enjoy Your</h3>
+                            <h2 class="slider-layer2">Winter Vacations</h2>
+                            <p class="slider-layer3">Lorem ipsum dolor sit amet consectetur adipiscing elit. aenean ac interdum nisi. sed in consequat mi</p>
+                        </div>
+                    </div>
+
+
+                    <a href="#" class="slider-transfer slider-transfer-left" onclick="plusSlides(-1)"><i class="slider-transfer-icon fas fa-chevron-left"></i></a>
+                    <a href="#" class="slider-transfer slider-transfer-right" onclick="plusSlides(1)"><i class="slider-transfer-icon fas fa-chevron-right"></i></a>
+                    
+                </div>
+            
         </div>
+
+        <div class="header-nav__search-wrap" id="modal-search">
+            <div class="header-nav__search-close">
+                <i class="header-nav__icon-close header-nav-serach__icon-close fas fa-times modal-close"></i>
+            </div>
+            <div class="header-nav__search-field">
+                <input type="text" class="header-nav__search-input" placeholder="Search...">
+                <button type="button" class="header-nav__search-btn">FIND NOW</button>
+            </div>
+        </div> 
+        
+        
+        <div class="header-nav-aside__overlay" id="close">
+        </div>
+            <div class="header-nav__aside" id="asideHeader">
+                <!-- <i class="header-nav-aside__icon-close fas fa-times" id="modal-close"></i> -->
+                <div class="header-nav__search-close">
+                    <i class="header-nav__icon-close fas fa-times modal-close"></i>
+                </div>
+                <div class="header-nav-aside__wrap">
+                    <ul class="header-nav-aside__list">
+                        <li class="header-nav-aside__item">
+                            <img class="header-nav-aside__logo" src="./img/logo.png" alt="">
+                        </li>
+                        <li class="header-nav-aside__item">
+                            <img class="header-nav-aside__media" src="./img/sidearea-img-2.png" alt="">
+                        </li>
+                        <li class="header-nav-aside__item">
+                            <img class="header-nav-aside__map" src="./img/sidearea-img.jpg" alt="">
+                        </li>
+                        <li class="header-nav-aside__item">
+                            <p class="header-nav-aside__text">Lorem ipsum dolor sit amet, consectetuer adipis cing elit.
+                                 Aenean commodo ligula eget dolor. Aenean massa.
+                                 Cum sociis theme natoque
+                            </p>
+                        </li>
+                        <li class="header-nav-aside__item">
+                            <h3 class="header-nav-aside__item-title">Find Your Destination</h3>
+                        </li>
+                        <li class="header-nav-aside__item header-nav-aside__item-search" >
+                            <input type="text" class="header-nav-aside__item-input" placeholder="Search...">
+                            <button type="button" class="header-nav-aside__btn">
+                                <i class="header-nav-aside__icon header-nav__search fas fa-search"></i>
+                            </button>
+                        </li>
+                        <li class="header-nav-aside__item">
+                            <h3 class="header-nav-aside__item-title">Follow Me</h3>
+                        </li>
+                        <li class="header-nav-aside__item">
+                            <ul class="header-nav-aside__list-social">
+                                <li class="header-nav-aside__social"><a href="#" class="header-nav-aside__link-social"><i class="header-nav-aside__icon-social fab fa-twitter"></i></a></li>
+                                <li class="header-nav-aside__social"><a href="#" class="header-nav-aside__link-social"><i class="header-nav-aside__icon-social fab fa-pinterest-p"></i></a></li>
+                                <li class="header-nav-aside__social"><a href="#" class="header-nav-aside__link-social"><i class="header-nav-aside__icon-social fab fa-facebook-f"></i></a></li>
+                                <li class="header-nav-aside__social"><a href="#" class="header-nav-aside__link-social"><i class="header-nav-aside__icon-social fab fa-instagram"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        
     </div>
+
+    <script>
+        var modalSearch = document.getElementById('modal-search');
+        var x = document.getElementsByClassName('modal-close')[0];
+        var opSearch = document.getElementById('modal-open');
+
+        opSearch.onclick=function(){
+            modalSearch.style.display="block";
+        }
+        x.onclick=function(){
+            modalSearch.style.display="none";
+        }
+        window.onclick=function(event){
+            if(event.target == modalSearch){
+                modalSearch.style.display="none";
+            }
+            if(event.target == asideHeader){
+                asideHeader.style.transform="translateX(100%)";
+            }
+        }
+
+        var asideHeader= document.getElementById('asideHeader');
+        var asideOpen= document.getElementById('asideOpen');
+        var asideClose= document.getElementsByClassName('modal-close')[1];
+        var close =document.getElementById('close');
+        asideOpen.onclick=function(){
+            asideHeader.style.transform = "translateX(0%)";
+            close.style.display ="block";
+        }
+        asideClose.onclick=function(){
+            asideHeader.style.transform = "translateX(100%)";
+            close.style.display ="none";
+        }
+        close.onclick =function(){
+            asideHeader.style.transform = "translateX(100%)";
+            close.style.display ="none";
+        }
+        
+
+        // Slider
+
+        var slideIndex = 1;
+        var currentSlide;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+        var i;
+        currentSlide=slideIndex;
+        var slides = document.getElementsByClassName("sliders");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+   
+    var loopSlide=function(){
+        slideIndex++;
+        var slides = document.getElementsByClassName("sliders");
+        if(slideIndex > slides.length){
+            slideIndex = 1;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+    setInterval(loopSlide,4000)
+
+   
+    </script>
 </body>
 </html>
