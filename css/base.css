@@ -37,3 +37,12 @@ a{
         opacity: 1;
     }
 }
+@keyframes fadeWidthOut {
+    from{
+       margin-right: 0%;
+    }
+    to{
+        margin-right: -20%;
+    }
+}
+
