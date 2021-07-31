@@ -5,6 +5,14 @@
     height: 80px;
     width: 100%;
     background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 5px 8px 13.92px 2.08px rgb(0 0 0 / 3%);
+
 }
 
 .header-wrap{
@@ -84,6 +92,8 @@
     opacity: 0;
     transition: opacity ease-out 0.35s,height ease-out 0.2s;
     transform-origin: top;
+    box-shadow: 0 3px 13px 0 rgba(0 0 0 /3%);
+    
 }
 .header-nav__submenu{
     left: 0;
@@ -572,10 +582,12 @@
 }
 
 .tour-standart__item{
-    transition: 1s;    
+    transition: 1s;   
+    border-radius: 5px; 
 }
 .tour-standart__item-inner{
     box-shadow: 5px 8px 13.92px 2.08px rgb(0 0 0 / 5%);
+    border-radius: 3px;
 
 }
 .tour-standart-item__link-img{
@@ -688,21 +700,27 @@
     display: none;
 }
 
-.slider-tour-standart__manual,.slider-tour-standart__auto{
+.slider-tour-standart__manual,
+.slider-tour-standart__auto,
+.review-user-slider__manual,
+.review-user-slider__auto{
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 20px;
-    right: 50%;
+    bottom: 5%;
+    right: 48%;
 }
-.slider-tour-standart__manual .manual-btn{
+.slider-tour-standart__manual .manual-btn,
+.review-user-slider__manual .manual-btn{
     /* background-color: #9CE5E7; */
     padding: 6px;
     border-radius: 10px;
     cursor: pointer;
     margin-right: 10px;
 }
-.slider-tour-standart__auto .auto-btn{
+.slider-tour-standart__auto .auto-btn,
+.review-user-slider__auto .auto-btn
+{
     padding: 6px;
     border-radius: 10px;
     cursor: pointer;
@@ -710,7 +728,8 @@
     background-color: #9CE5E7;
 }
 
-.slider-tour-standart__manual .manual-btn:hover{
+.slider-tour-standart__manual .manual-btn:hover,
+.review-user-slider__manual .manual-btn:hover{
     background-color: var(--primary-color);
 }
 .first{
@@ -731,4 +750,464 @@
 }
 #radio2:checked ~ .slider-tour-standart__auto .auto-btn2{
     background-color: var(--primary-color);
+}
+
+
+/* Center Container */
+.center-container{
+    padding: 25px 0 45px 0;
+}
+
+.center-container__section{
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.center-container-section__tagline{
+    display: block;
+    font-size: 3.8rem;
+    color: var(--primary-color);
+    line-height: 8.8rem;
+
+}
+
+.section__title
+{
+    display: block;
+    font-size: 6.2rem;
+    font-weight: 600;
+    line-height: 6rem;
+}
+.center-container-section__title{
+    color: var(--title-color);
+}
+.center-container__video{
+    padding: 25px 0;
+}
+
+.center-container-video__link{
+    cursor: pointer;
+}
+
+.center-container-video__img{
+    width: 100%;
+    box-shadow: 5px 8px 13.92px 2.08px rgb(0 0 0 / 5%);
+
+}
+
+.center-container-video__inner{
+    display: block;
+    position: relative;
+    
+}
+
+.center-container-video__play-icon{
+    font-size: 1.4rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 25px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    right: 45%;
+    transition: 0.2s linear;
+}
+.center-container-video__inner:hover .center-container-video__play-icon{
+    filter: brightness(1.1);
+}
+.center-container__content{
+    max-width: 100%;
+   text-align: center;
+   padding: 20px 0;
+}
+
+.content-text{ 
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.center-container__content-text{
+    color: var(--text-color);
+}
+.center-container__inner-btn{
+    padding: 10px;
+    text-align: center;
+}
+
+.center-container__btn{
+    padding: 26px 66px;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    transition: 0.2s linear;
+}
+.center-container__btn:hover{
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
+/* Modal video */
+.center-container-video__overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 10;
+}
+
+.center-container-video__yt{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    width: 100%;
+}
+
+
+/* Review User */
+.review-user{
+    padding: 100px 0;
+    width: 100%;
+    margin: 45px 0;
+    position: relative;
+    background-image: url('https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/skiing-parallax-1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.review-user__section{
+    text-align: center;
+}
+.review-user-section__title{
+   color: var(--white-color);
+   padding: 20px 0 10px;
+}
+.review-user-section__text{
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+
+/* Slider-- item */
+.review-user__slider{
+    padding: 10px 0;
+}
+
+.review-user-slider__list{
+    flex-wrap: nowrap;
+}
+
+.review-user-slider__item{
+    background-color: var(--white-color);
+    border-radius: 6px;
+    margin:0 15px;
+    transition: 1.5s ease-in-out;
+}
+
+.review-user-slider__item-inner{
+    padding:50px 0 50px 40px;
+   
+}
+
+/* Avartar */
+.review-user-slider__item-avartar{
+}
+
+.review-user-slider__img{
+
+}
+/* Infro */
+.review-user-slider__item-info{
+    padding-left: 30px;
+}
+
+.review-user-slider__name-tour{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    color: var(--title-color);
+    font-size: 2rem;
+    font-weight: 600;
+    transition: 0.2s linear;
+}
+.review-user-slider__name-tour:hover{
+    color: var(--primary-color);
+}
+
+.review-user-slider__list-rating{
+    padding: 10px 0;
+    display: flex;
+}
+
+.review-user-slider__rating{
+    padding-right: 5px;
+}
+
+.review-user-slider__icon-rating{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.review-user-slider__decs{
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    max-width: 80%;
+    line-height: 1.8rem;
+}   
+
+.review-user-slider__author-name{
+    padding: 10px 0;
+    color: var(--title-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.review-user-slider__list input{
+    display: none;
+}
+#listrv1:checked ~ .user-rv-1{
+    margin-left: 0;
+}
+#listrv2:checked ~ .user-rv-1{
+    margin-left: -105%;
+}
+#listrv3:checked ~ .user-rv-1{
+    margin-left: -211%;
+}
+
+#listrv1:checked ~ .review-user-slider__auto .auto-listrv1{
+    background-color: var(--primary-color);
+}
+#listrv2:checked ~ .review-user-slider__auto .auto-listrv2{
+    background-color: var(--primary-color);
+}
+#listrv3:checked ~ .review-user-slider__auto .auto-listrv3{
+    background-color: var(--primary-color);
+}
+
+/* Content WinterHoliday */
+.winter-holiday__text{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+.winter-holiday__content{
+    max-width: 100%;
+   text-align: center;
+   padding-bottom: 20px;
+}
+/* List item for winter Holiday */
+.winter-holiday__info{
+    width: 100%;
+
+    padding: 25px 0;
+}
+
+.winter-holiday__info-wrap{
+
+    width: 80%;
+    margin-left: 10%;
+}
+
+.winter-holiday__info-list{
+    
+}
+
+.winter-holiday__info-item{
+    text-align: center;
+}   
+
+.winter-holiday__info-img-wrap{
+    padding: 15px 0;
+
+}
+
+.winter-holiday__info-img{
+    padding: 10px 0;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    transition: 0.3s linear;
+}
+.winter-holiday__info-img:hover{
+    transform: translateY(-5%);
+
+}
+.winter-holiday__info-titel{
+    padding: 15px 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.winter-holiday__info-text{
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 2rem;
+}
+
+/*counter & team  */
+.team-counter-wrapper{
+    padding: 45px 0;
+}
+
+/* Team */
+.our-team{
+  
+}
+
+.team-person{
+    position: relative;
+}
+
+.team-person__img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    
+}
+
+.team-person__info{
+    
+    text-align: center;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.team-person:hover .team-person__info{
+    height: 30%;
+    opacity: 1;
+}
+.team-person__info-wrap{
+    padding: 10px 0;
+}
+.team-person__name{
+    padding: 10px 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.team-person__text{
+    padding: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--white-color);
+    line-height: 2.2rem;
+}
+
+.team-person__list-social{
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.team-person__item-social{
+    display: inline-block;
+    padding: 0 10px ;
+}
+
+.team-person__link-social{
+    display: block;
+}
+
+.team-person__icon-social{
+    font-size: 1.6rem;
+    color: var(--white-color);
+    transition: 0.4s linear;
+}
+.team-person__icon-social:hover
+{  
+    color: #23a9af;
+}
+/* Counter */
+.counter-inner{
+    background-color: #3abdc1;
+    padding: 60px 0;
+}
+
+.counter-wrapper{
+    text-align: center;
+
+    
+}
+.counter__number{
+    font-size: 6rem;
+    color: var(--white-color);
+    display: block;
+    line-height: 8rem;
+}
+.counter__title{
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--white-color);
+    display: block;
+}
+
+/* Winter resort */
+.winter-resort__list{
+    padding: 45px 0;
+}
+.winter-resort__item {
+    padding:0 30px ;
+}
+.winter-resort__item-wrapper{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.winter-resort__item-link{
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    top:0;
+    z-index: 1;
+}
+/* .winter-resort__item-img-wrap{
+    border-radius: 50%;
+} */
+.winter-resort__item-img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    filter: brightness(0.8);
+    transition: 0.4s ease-in-out;
+
+}
+.winter-resort__item-wrapper:hover .winter-resort__item-img{
+    transform: scale(1.05,1.05);
+}
+.winter-resort__item-country{
+    font-size: 5rem;
+    color: var(--white-color);
+    position: absolute;
+    font-weight: 500;
+    top: 50%;
+    left: 30%;
+}
+.switzerland{
+    left: 20%;
 }
