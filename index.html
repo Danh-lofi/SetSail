@@ -20,7 +20,7 @@
     <div class="container">
         <div class="grid">
             <div class="header">
-                <div class="header-wrap row">
+                <div class="header-wrap row ">
                     <div class="header-nav__logo col l-2">
                         <img class="header-nav__logo-img" src="./img/logo.png" alt="">
                     </div>
@@ -190,7 +190,7 @@
                             </li>
                         </ul>
                     </div>
-
+                    
                     <div class="header-nav__right col l-2">
                         <ul class="header-nav-right__list-icon">
                             <li class="header-nav-right__item"><i class="header-nav-right__icon header-nav__cart fas fa-shopping-cart"></i>
@@ -203,10 +203,91 @@
                             <li class="header-nav-right__item"><i class="header-nav-right__icon header-nav__bars fas fa-bars" id="asideOpen"></i></li>
                         </ul>
                     </div>
-
                 </div>
+                
             </div>
+            
+            <div class="header-moblie">
+                <div class="header-wrap-moblie row">
+                    <div class="header-moblie-nav__menu col m-2">
+                        <i id="ocMenu" class="header-moblie-nav__menu-icon fas fa-bars"></i>
+                    </div>
 
+                    <div class="header-moblie-nav__logo col m-8">
+                        <img class="header-moblie-nav__logo-img" src="./img/logo-mobile-img.png" alt="">
+                    </div>
+
+                    <div class="header-moblie-nav__login col m-2">
+                        <i class="header-moblie-nav__login-icon far fa-user-circle" id="openLoginModal"></i>
+                    </div>
+                </div>
+                <div class="header-moblie-nav__menu-wrap" id="menuMb">
+                    <div class="header-moblie-nav__menu-inner grid wide">
+                        <ul class="header-moblie-nav__menu-list">
+                            <li class="header-moblie-nav__menu-item item-current"><span class="header-moblie-nav__menu-item-title ">Home</span> <i class="fas fa-angle-right header-moblie-nav__menu-item-icon openSubmenu" onclick="openSubmenu(0)"></i> <i class="fas fa-angle-down header-moblie-nav__menu-item-icon closeSubmenu"></i>
+                                <ul class="header-moblie-nav__submenu-list" id="submenu">
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link"> Travel Agency</a></li>
+                                    <li class="header-moblie-nav__submenu-item item-current"><a href="#" class="header-moblie-nav__submenu-link"> Winter Holidays</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">City Tours</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link"> Wine Tours</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Landing</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-moblie-nav__menu-item"><span class="header-moblie-nav__menu-item-title">Pages</span><i class="fas fa-angle-right header-moblie-nav__menu-item-icon openSubmenu"></i> <i class="fas fa-angle-down header-moblie-nav__menu-item-icon closeSubmenu"></i>
+                                <ul class="header-moblie-nav__submenu-list" id="submenu">
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">About Us</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">What We Offer</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Our Team</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Get In Touch</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Contact Us</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">FAQ Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-moblie-nav__menu-item"><span class="header-moblie-nav__menu-item-title">Destinations</span><i class="fas fa-angle-right header-moblie-nav__menu-item-icon openSubmenu"></i> <i class="fas fa-angle-down header-moblie-nav__menu-item-icon closeSubmenu"></i>
+                                <ul class="header-moblie-nav__submenu-list" id="submenu">
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Destination List</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Destination Slider</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Destination Item</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-moblie-nav__menu-item"><span class="header-moblie-nav__menu-item-title">Tours</span><i class="fas fa-angle-right header-moblie-nav__menu-item-icon openSubmenu"></i> <i class="fas fa-angle-down header-moblie-nav__menu-item-icon closeSubmenu"></i>
+                                <ul class="header-moblie-nav__submenu-list" id="submenu">
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Standard List</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Gallery List</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Split List</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Tour Item</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-moblie-nav__menu-item"><span class="header-moblie-nav__menu-item-title">Blog</span><i class="fas fa-angle-right header-moblie-nav__menu-item-icon openSubmenu"></i> <i class="fas fa-angle-down header-moblie-nav__menu-item-icon closeSubmenu"></i>
+                                <ul class="header-moblie-nav__submenu-list" id="submenu">
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Blog Masonry</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Blog Standard</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Post Types</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-moblie-nav__menu-item"><span class="header-moblie-nav__menu-item-title">Shop</span><i class="fas fa-angle-right header-moblie-nav__menu-item-icon openSubmenu"></i> <i class="fas fa-angle-down header-moblie-nav__menu-item-icon closeSubmenu"></i>
+                                <ul class="header-moblie-nav__submenu-list" id="submenu">
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Product List</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Product Single</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Shop Layouts</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Shop Pages</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="header-moblie-nav__menu-item"><span class="header-moblie-nav__menu-item-title">Elements</span><i class="fas fa-angle-right header-moblie-nav__menu-item-icon openSubmenu"></i> <i class="fas fa-angle-down header-moblie-nav__menu-item-icon closeSubmenu"></i>
+                                <ul class="header-moblie-nav__submenu-list" id="submenu">
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Featured</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Presentation</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Classic</a></li>
+                                    <li class="header-moblie-nav__submenu-item"><a href="#" class="header-moblie-nav__submenu-link">Typography</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
             
             <div class="slider-container">
                     <div class="sliders">
@@ -237,7 +318,8 @@
                 <div class="tour-standart__list row">
                     <input type="radio" id="radio1" name="tour-standart__list-input">
                     <input type="radio" id="radio2" name="tour-standart__list-input">
-                    <div class="tour-standart__item col l-2-4 first">
+                    <input type="radio" id="radio3" name="tour-standart__list-input">
+                    <div class="tour-standart__item col l-2-4 m-6  first">
                         <div class="tour-standart__item-inner">
                             <a class="tour-standart-item__link-img">
                                 <img class="tour-standart-item__img" src="./img/tour-standart-6.jpg" alt="">
@@ -266,7 +348,7 @@
                         </div>
                     </div>
 
-                    <div class="tour-standart__item col l-2-4">
+                    <div class="tour-standart__item col l-2-4 m-6">
                         <div class="tour-standart__item-inner">
                             <a class="tour-standart-item__link-img">
                                 <img class="tour-standart-item__img" src="./img/tour-standart-1.jpg" alt="">
@@ -295,7 +377,7 @@
                         </div>
                     </div>
 
-                    <div class="tour-standart__item col l-2-4">
+                    <div class="tour-standart__item col l-2-4 m-6">
                         <div class="tour-standart__item-inner">
                             <a class="tour-standart-item__link-img">
                                 <img class="tour-standart-item__img" src="./img/tour-standart-2.jpg" alt="">
@@ -324,7 +406,7 @@
                         </div>
                     </div>
 
-                    <div class="tour-standart__item col l-2-4">
+                    <div class="tour-standart__item col l-2-4 m-6">
                         <div class="tour-standart__item-inner">
                             <a class="tour-standart-item__link-img">
                                 <img class="tour-standart-item__img" src="./img/tour-standart-3.jpg" alt="">
@@ -353,7 +435,7 @@
                         </div>
                     </div>
 
-                    <div class="tour-standart__item col l-2-4">
+                    <div class="tour-standart__item col l-2-4 m-6">
                         <div class="tour-standart__item-inner">
                             <a class="tour-standart-item__link-img">
                                 <img class="tour-standart-item__img" src="./img/tour-standart-4.jpg" alt="">
@@ -382,7 +464,7 @@
                         </div>
                     </div>
 
-                    <div class="tour-standart__item col l-2-4">
+                    <div class="tour-standart__item col l-2-4 m-6">
                         <div class="tour-standart__item-inner">
                             <a class="tour-standart-item__link-img">
                                 <img class="tour-standart-item__img" src="./img/tour-standart-5.jpg" alt="">
@@ -415,10 +497,13 @@
                     <div class="slider-tour-standart__auto">
                         <div class="auto-btn1 auto-btn"></div>
                         <div class="auto-btn2 auto-btn"></div>
+                        <div class="auto-btn3 auto-btn"></div>
                     </div>
                     <div class="slider-tour-standart__manual">
                         <label for="radio1" class="manual-btn" onclick="setCounter(1)"></label>
                         <label for="radio2" class="manual-btn" onclick="setCounter(2)"></label>
+                        <label for="radio3" class="manual-btn for-mb" onclick="setCounter(2)"></label>
+                        
                     </div>
                   
                 </div>        
@@ -471,8 +556,9 @@
                         <input type="radio" id="listrv1" name="review-transfer" checked="checked">
                         <input type="radio" id="listrv2" name="review-transfer">
                         <input type="radio" id="listrv3" name="review-transfer">
+                        <input type="radio" id="listrv4" name="review-transfer">
 
-                        <div class="review-user-slider__item user-rv-1 col l-4" id="beginReview">
+                        <div class="review-user-slider__item col l-4 m-6 user-rv-1 " id="beginReview">
                             <div class="review-user-slider__item-inner row">    
                                 <div class="review-user-slider__item-avartar col l-3">
                                     <img class="review-user-slider__img" src="./img/user-img-1.png" alt="">
@@ -497,7 +583,7 @@
                             </div>
                         </div>
 
-                        <div class="review-user-slider__item col l-4">
+                        <div class="review-user-slider__item col l-4 m-6">
                             <div class="review-user-slider__item-inner row">
                                 <div class="review-user-slider__item-avartar col l-3">
                                     <img class="review-user-slider__img" src="./img/user-img-2.png" alt="">
@@ -522,7 +608,7 @@
                             </div>
                         </div>
 
-                        <div class="review-user-slider__item col l-4">
+                        <div class="review-user-slider__item col l-4 m-6">
                             <div class="review-user-slider__item-inner row">
                                 <div class="review-user-slider__item-avartar col l-3">
                                     <img class="review-user-slider__img" src="./img/user-img-3.png" alt="">
@@ -547,7 +633,7 @@
                             </div>
                         </div>
 
-                        <div class="review-user-slider__item col l-4">
+                        <div class="review-user-slider__item col l-4 m-6">
                             <div class="review-user-slider__item-inner row">
                                 <div class="review-user-slider__item-avartar col l-3">
                                     <img class="review-user-slider__img" src="./img/user-img-4.png" alt="">
@@ -572,7 +658,7 @@
                             </div>
                         </div>
 
-                        <div class="review-user-slider__item col l-4">
+                        <div class="review-user-slider__item col l-4 m-6">
                             <div class="review-user-slider__item-inner row">
                                 <div class="review-user-slider__item-avartar col l-3">
                                     <img class="review-user-slider__img" src="./img/user-img-5.png" alt="">
@@ -598,7 +684,7 @@
                         </div>
 
 
-                        <div class="review-user-slider__item col l-4">
+                        <div class="review-user-slider__item col l-4 m-6">
                             <div class="review-user-slider__item-inner row">
                                 <div class="review-user-slider__item-avartar col l-3">
                                     <img class="review-user-slider__img" src="./img/user-img-6.png" alt="">
@@ -623,7 +709,7 @@
                             </div>
                         </div>
 
-                        <div class="review-user-slider__item col l-4">
+                        <div class="review-user-slider__item col l-4 m-6">
                             <div class="review-user-slider__item-inner row">
                                 <div class="review-user-slider__item-avartar col l-3">
                                     <img class="review-user-slider__img" src="./img/user-img-1.png" alt="">
@@ -648,7 +734,7 @@
                             </div>
                         </div>
 
-                        <div class="review-user-slider__item col l-4">
+                        <div class="review-user-slider__item col l-4 m-6">
                             <div class="review-user-slider__item-inner row">
                                 <div class="review-user-slider__item-avartar col l-3">
                                     <img class="review-user-slider__img" src="./img/user-img-2.png" alt="">
@@ -673,7 +759,7 @@
                             </div>
                         </div>
 
-                        <div class="review-user-slider__item col l-4">
+                        <div class="review-user-slider__item col l-4 m-6">
                             <div class="review-user-slider__item-inner row">
                                 <div class="review-user-slider__item-avartar col l-3">
                                     <img class="review-user-slider__img" src="./img/user-img-2.png" alt="">
@@ -702,11 +788,14 @@
                             <div class="auto-listrv1 auto-btn"></div>
                             <div class="auto-listrv2 auto-btn"></div>
                             <div class="auto-listrv3 auto-btn"></div>
+                            <div class="auto-listrv4 auto-btn"></div>
+
                         </div>
                         <div class="review-user-slider__manual">
                             <label for="listrv1" class="manual-btn" ></label>
                             <label for="listrv2" class="manual-btn" ></label>
                             <label for="listrv3" class="manual-btn" ></label>
+                            <label for="listrv4" class="manual-btn manual-moblie" ></label>
                         </div>
                     </div>
                 </div>
@@ -726,7 +815,7 @@
                 <div class="winter-holiday__info">
                     <div class="winter-holiday__info-wrap">
                         <div class="winter-holiday__info-list row">
-                            <div class="winter-holiday__info-item col l-3">
+                            <div class="winter-holiday__info-item col l-3 m-12">
                                 <div class="winter-holiday__info-img-wrap">
                                     <img src="./img/custom-icon-img-1.png" class="winter-holiday__info-img" alt="">
                                 </div>
@@ -736,7 +825,7 @@
                                 </p>
                             </div>
 
-                            <div class="winter-holiday__info-item col l-3">
+                            <div class="winter-holiday__info-item col l-3 m-12">
                                 <div class="winter-holiday__info-img-wrap">
                                     <img src="./img/custom-icon-img-2.png" class="winter-holiday__info-img" alt="">
                                 </div>
@@ -746,7 +835,7 @@
                                 </p>
                             </div>
 
-                            <div class="winter-holiday__info-item col l-3">
+                            <div class="winter-holiday__info-item col l-3 m-12">
                                 <div class="winter-holiday__info-img-wrap">
                                     <img src="./img/custom-icon-img-3.png" class="winter-holiday__info-img" alt="">
                                 </div>
@@ -756,7 +845,7 @@
                                 </p>
                             </div>
 
-                            <div class="winter-holiday__info-item col l-3">
+                            <div class="winter-holiday__info-item col l-3 m-12">
                                 <div class="winter-holiday__info-img-wrap">
                                     <img src="./img/custom-icon-img-4.png" class="winter-holiday__info-img" alt="">
                                 </div>
@@ -773,7 +862,7 @@
             <!-- counter & team -->
             <div class="team-counter-wrapper">
                 <div class="our-team row no-gutters">
-                    <div class="team-person col l-3">
+                    <div class="team-person col l-3 m-6">
                         <img class="team-person__img" src="./img/our-team-img-1.jpg" alt="">
                         <div class="team-person__info">
                             <div class="team-person__info-wrap">
@@ -792,7 +881,7 @@
                         </div>
                     </div>
 
-                    <div class="team-person col l-3">
+                    <div class="team-person col l-3 m-6">
                         <img class="team-person__img" src="./img/our-team-img-2.jpg" alt="">
                         <div class="team-person__info">
                             <div class="team-person__info-wrap">
@@ -811,7 +900,7 @@
                         </div>
                     </div>
 
-                    <div class="team-person col l-3">
+                    <div class="team-person col l-3 m-0">
                         <img class="team-person__img" src="./img/our-team-img-3.jpg" alt="">
                         <div class="team-person__info">
                             <div class="team-person__info-wrap">
@@ -830,7 +919,7 @@
                         </div>
                     </div>
 
-                    <div class="team-person col l-3">
+                    <div class="team-person col l-3 m-0">
                         <img class="team-person__img" src="./img/our-team-img-4.jpg" alt="">
                         <div class="team-person__info">
                             <div class="team-person__info-wrap">
@@ -854,7 +943,7 @@
 
                     <div class="grid wide">
                         <div class="counter row">
-                            <div class="counter-wrapper col l-3">
+                            <div class="counter-wrapper col l-3 m-6">
                                 <span class="counter__number">
                                     452
                                 </span>
@@ -863,7 +952,7 @@
                                 </span>
                             </div>
         
-                            <div class="counter-wrapper col l-3">
+                            <div class="counter-wrapper col l-3 m-6">
                                 <span class="counter__number">
                                     120
                                 </span>
@@ -872,7 +961,7 @@
                                 </span>
                             </div>
         
-                            <div class="counter-wrapper col l-3">
+                            <div class="counter-wrapper col l-3 m-6">
                                 <span class="counter__number">
                                     283
                                 </span>
@@ -881,7 +970,7 @@
                                 </span>
                             </div>
         
-                            <div class="counter-wrapper col l-3">
+                            <div class="counter-wrapper col l-3 m-6">
                                 <span class="counter__number">
                                     197
                                 </span>
@@ -908,7 +997,7 @@
 
                 <div class="grid wide winter-resort__list">
                     <div class="row ">
-                        <div class="winter-resort__item col l-4">
+                        <div class="winter-resort__item col l-4 m-6">
                             <div class="winter-resort__item-wrapper">
                                 <!-- <div class="winter-resort__item-img-wrap">
                                     
@@ -920,7 +1009,7 @@
                             </div>
                         </div>
 
-                        <div class="winter-resort__item col l-4">
+                        <div class="winter-resort__item col l-4 m-6">
                             <div class="winter-resort__item-wrapper">
                                 <!-- <div class="winter-resort__item-img-wrap">
                                     
@@ -930,9 +1019,13 @@
                                 </a>
                                 <h3 class="winter-resort__item-country" style="font-family:'Satisfy',cursive;">France</h3>
                             </div>
+                            <div class="winter-resort__item-standart">
+                                <i class="winter-resort__item-standart-icon fas fa-star"></i>
+                            </div>
                         </div>
 
-                        <div class="winter-resort__item col l-4">
+
+                        <div class="winter-resort__item col l-4 m-6">
                             <div class="winter-resort__item-wrapper">
                                 <!-- <div class="winter-resort__item-img-wrap">
                                     
@@ -946,8 +1039,77 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                
+            <div class="footer">
+                <div class="footer-wrap grid wide">
+                    <div class="footer-list row">
+
+                        <!-- 3 title footer-title
+                            9 text hover  .footer-text .black-text .white-text .text-hover
+                            2 text
+                        -->
+                        <div class="contact col l-3 m-6">
+                            <img src="./img/logo.png" class="contact-logo" alt="">
+                            <p class="contact-content">
+                                Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
+                            </p>
+                            <ul class="contact-list">
+                                <li class="contact-item"><a href="#" class="footer-text white-color"><i class="pd-r-10 footer-text white-color far fa-envelope"></i> thdanh2001@gmail.com</a></li>
+                                <li class="contact-item"><a href="#" class="footer-text white-color"><i class="pd-r-10 footer-text white-color fas fa-phone-alt"></i> 09656249xx</a></li>
+                                <li class="contact-item"><a href="#" class="footer-text white-color"><i class="pd-r-10 footer-text white-color fas fa-map-marker-alt"></i> Bình Định</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="recent-post col l-3 m-6">
+                             <h3 class="recent-post footer-title white-color">Our Recent Posts</h3>
+                             <ul class="recent-post-list">
+                                 <li class="recent-post-item">
+                                     <a href="#" class="recent-post-link footer-text black-color">Visit Thailand, Bali And China</a>
+                                     <a href="#" class=" footer-text white-color">September 7, 2016</a>
+                                </li>
+                                 <li class="recent-post-item">
+                                    <a href="#" class="recent-post-link footer-text black-color">The Sound Of Our Jungle</a>
+                                    <a href="#" class=" footer-text white-color">September 7, 2016</a>
+                                </li>
+                                <li class="recent-post-item">
+                                     <a href="#" class="recent-post-link footer-text black-color">New Year, New Resolutions!</a>
+                                     <a href="#" class=" footer-text white-color">September 7, 2016</a>
+                                </li>
+                             </ul>
+                        </div>
+
+                        <div class="newletter col l-3 m-6">
+                            <h3 class="footer-title white-color">Subscribe to our Newsletter</h3>
+                            <p class="footer-text black-color pd-tb-10">Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho</p>
+                            <form action="" class="newletter-form">
+                                <div class="newletter-form-input-wrapper row">
+                                    <i class="newletter-form-icon footer-text white-color fas fa-user col l-2"></i>
+                                    <input type="text" class="newletter-form-input col l-10" placeholder="Name">
+                                </div>
+                                <div class="newletter-form-input-wrapper row">
+                                    <i class="newletter-form-icon footer-text white-color far fa-envelope col l-2"></i>
+                                    <input type="text" class="newletter-form-input col l-10" placeholder="Email">
+                                </div>
+                                <button type="submit" class="newletter-form-submit">
+                                    <a   class="newletter-form-submit-link footer-text white-color">Subscribe</a>
+                                </button>
+
+                            </form>
+                        </div>
+
+                        <div class="our-instagram col l-3 m-6">
+                            <h3 class="footer-title white-color ">Our Instagram</h3>
+                            <p class="footer-text black-color pd-tb-10">Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="footer-text black-color">Powered by @ </p>
+                    <a href="#" class="footer-text white-color"> Qode Interactive 2018</a>
+                </div>
             </div>
             <!-- Modal Search -->
             <div class="header-nav__search-wrap" id="modal-search">
@@ -1019,7 +1181,90 @@
                 </div>
             </div>
 
-        
+            <!-- Modal login -->
+            <div class="modal-login__overlay" id="loginModal">
+                <div class="modal-login-form --login" id="loginForm">
+                    <div class="modal-login-form__wrapper">
+                        <div class="modal-login-form__header row">
+                            <div class="modal-login-form__header-left form-current col m-6"><h3 class="modal-login-form__header-title" >LOGIN</h3></div>
+                            <div class="modal-login-form__header-right col m-6"><h3 class="modal-login-form__header-title" id="openRegisterForm">REGISTER</h3></div>
+                        </div>
+                        <div class="modal-login-form__body">
+                            <div class="modal-login-form__body-recommend">
+                                <h3 class="body-recommend__title"> Sign In Here!</h3>
+                                <p class="body-recommend__text">Log into your account in just a few simple steps</p>
+                            </div>
+                            
+                            <form action="" class="modal-login-form__form-login">
+                                <div class="form-login-input-wrapper row">
+                                    <i class="form-login-icon footer-text white-color fas fa-user col l-2"></i>
+                                    <input type="text" class="form-login-input col l-10" placeholder="User Name">
+                                </div>
+                                <div class="form-login-input-wrapper row">
+                                    <i class="form-login-icon footer-text white-color fas fa-lock col l-2"></i>
+                                    <input type="text" class="form-login-input col l-10" placeholder="Password">
+                                </div>
+
+                                <div class="form-login__remember">
+                                    <input type="radio" id="remember">
+                                    <label for="remember" class="form-login__label">Remember me</label>
+                                </div>
+
+                                <a href="form-login__lost-pass"><span class="orm-login__lost-pass-text">Lost Your password?</span> 
+                                </a>
+
+                                <button type="submit" class="form-login-submit">
+                                    <a class="form-login-submit-link footer-text white-color">Login</a>
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modal-login-form --register" id="registerForm">
+                    <div class="modal-login-form__wrapper">
+                        <div class="modal-login-form__header row">
+                            <div class="modal-login-form__header-left col m-6"><h3 class="modal-login-form__header-title" id="openLoginForm">LOGIN</h3></div>
+                            <div class="modal-login-form__header-right col m-6 form-current"><h3 class="modal-login-form__header-title">REGISTER</h3></div>
+                        </div>
+                        <div class="modal-login-form__body">
+                            <div class="modal-login-form__body-recommend">
+                                <h3 class="body-recommend__title"> Register Now!</h3>
+                                <p class="body-recommend__text">Join the SetSail community today & set up a free account.</p>
+                            </div>
+                            
+                            <form action="" class="modal-login-form__form-login">
+                                <div class="form-login-input-wrapper row">
+                                    <i class="form-login-icon footer-text white-color fas fa-user col l-2"></i>
+                                    <input type="text" class="form-login-input col l-10" placeholder="User Name">
+                                </div>
+                                <div class="form-login-input-wrapper row">
+                                    <i class="form-login-icon footer-text white-color far fa-envelope col l-2"></i>
+                                    <input type="text" class="form-login-input col l-10" placeholder="Email">
+                                </div>
+                                <div class="form-login-input-wrapper row">
+                                    <i class="form-login-icon footer-text white-color fas fa-lock col l-2"></i>
+                                    <input type="text" class="form-login-input col l-10" placeholder="Password">
+                                </div>
+                                <div class="form-login-input-wrapper row">
+                                    <i class="form-login-icon footer-text white-color fas fa-lock col l-2"></i>
+                                    <input type="text" class="form-login-input col l-10" placeholder="Repeat Password">
+                                </div>
+
+                                
+
+                    
+
+                                <button type="submit" class="form-login-submit">
+                                    <a class="form-login-submit-link footer-text white-color">REGISTER</a>
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
     </div>
 
     <script>
@@ -1034,14 +1279,15 @@
             modalSearch.style.display="none";
         }
         window.onclick=function(event){
+            if(event.target == asideHeader){
+                asideHeader.style.transform="translateX(100%)";
+            }   
+        }
+        window.onclick=function(event){
             if(event.target == modalSearch){
                 modalSearch.style.display="none";
             }
-            if(event.target == asideHeader){
-                asideHeader.style.transform="translateX(100%)";
-            }
         }
-
         var asideHeader= document.getElementById('asideHeader');
         var asideOpen= document.getElementById('asideOpen');
         var asideClose= document.getElementsByClassName('modal-close')[1];
@@ -1106,7 +1352,6 @@
         if(counter > 2){
             counter=1;
         }
-        console.log(counter)
    }
    setInterval(autoChecked,3000)
 
@@ -1137,6 +1382,48 @@
                 modalVideo.style.display="none";
             }
         }
+
+    // responsive
+
+    var ocMenu = document.getElementById('ocMenu');
+    var menuMb = document.getElementById('menuMb');
+    var heightMenu = menuMb.clientHeight;
+    console.log(heightMenu)
+    ocMenu.onclick=function(){
+        if(menuMb.clientHeight === heightMenu){
+            menuMb.style.display = "block"
+        }
+        else{
+            menuMb.style.display = "none"
+        }
+    }
+
+    var loginModal = document.getElementById('loginModal');
+    var openLoginModal = document.getElementById('openLoginModal');
+    var loginForm = document.getElementById('loginForm');
+    var registerForm = document.getElementById('registerForm');
+    var openLoginForm = document.getElementById('openLoginForm');
+    var openRegisterForm = document.getElementById('openRegisterForm')
+
+    openLoginModal.onclick = function(){
+        loginModal.style.display = "block";
+    }
+    openLoginForm.onclick = function(){
+        registerForm.style.display = "none";
+        loginForm.style.display = "block";
+    }
+    openRegisterForm.onclick = function(){
+        loginForm.style.display = "none";
+        registerForm.style.display = "block";
+
+    }
+    window.onclick=function(event){
+        if(event.target == loginModal){
+                loginModal.style.display= "none";
+            }
+    }
+
+    
     </script>
 </body>
 </html>
