@@ -1,5 +1,8 @@
 .container{
 }
+body{
+    overflow: hidden;
+}
 /* Header */
 .header{
     height: 80px;
