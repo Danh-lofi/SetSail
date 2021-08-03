@@ -715,15 +715,18 @@
     right: 48%;
 }
 .slider-tour-standart__manual .manual-btn,
-.review-user-slider__manual .manual-btn{
+.review-user-slider__manual .review-user-slider__manual-btn{
     /* background-color: #9CE5E7; */
     padding: 6px;
     border-radius: 10px;
     cursor: pointer;
     margin-right: 10px;
 }
-.for-mb,
-.auto-btn3{
+.manual-for-mb,
+.auto-btn3,
+.auto-btn4,
+.auto-btn5,
+.auto-btn6{
     display: none;
 }
 .slider-tour-standart__auto .auto-btn,
@@ -737,7 +740,7 @@
 }
 
 .slider-tour-standart__manual .manual-btn:hover,
-.review-user-slider__manual .manual-btn:hover{
+.review-user-slider__manual .review-user-slider__manual-btn:hover{
     background-color: var(--primary-color);
 }
 .first{
@@ -873,6 +876,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     display: none;
     z-index: 1000;
+    animation: fadeIn 0.4s linear;
 }
 
 .center-container-video__yt{
@@ -1513,12 +1517,12 @@ body{
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1000;
     display: none;
- 
+    animation: fadeIn 0.4s linear;
 }
 .modal-login-form{
     position: absolute;
     left:30%;
-    top: 20%;
+    top: 10%;
     background-color: var(--primary-color);
     padding: 20px;
 
@@ -1546,6 +1550,7 @@ body{
     font-size: 1.6rem;
     color: var(--white-color);
     font-weight: 600;
+    cursor: pointer;
 }
 
 .modal-login-form__body{
@@ -1614,22 +1619,60 @@ body{
     display: block;
     width: 100%;
     padding: 16px 26px;
-    background-color: var(--primary-color);
+    background-color: var(--white-color);
     border: none;
     outline: none;
     transition: 0.2s linear;
     cursor: pointer;
     margin-top: 20px;
 }
+.form-login-submit-link{
+    font-size: 1.5rem;
+    color: var(--title-color);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
 .form-login-submit:hover{
-    background-color: var(--white-color);
+    background-color: #26888b;
 }
 .form-login-submit:hover .form-login-submit-link{
-    color: var(--text-color);
+    color: var(--white-color);
 }
 .--register{
     display: none;
     left: 22%;
+}
+.orm-login__lost-pass-text:hover{
+    color: var(--text-color);
+}
+.form-login-sign-with,
+.form-login-sign__socials{
+    padding: 10px 0;
+}
+.form-login-sign-with__text{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    font-weight: 500;
+}
+.form-login-sign__socials-btn{
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+.form-login-sign__socials-btn:hover{
+    filter: brightness(1.1);
+}
+.--facebook{
+    background-color: #3b5998;
+}
+.--google{
+    background-color: #DD4b39;
+}
+.form-login-sign__socials-link{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--white-color);
 }
 /*PC low resolution ipad pro ???*/
 
@@ -1649,7 +1692,10 @@ body{
     .header-moblie-nav__menu-wrap{
         display: none;
     }
-    .for-mb,
+    .manual-for-mb{
+        display: none;
+    }
+    .for-tablet,
     .auto-btn3{
         display: block;
     }
@@ -1692,7 +1738,7 @@ body{
     #listrv4:checked ~ .user-rv-1{
         margin-left: -312%;
     }
-    .counter-wrapper, {
+    .counter-wrapper {
         padding-top: 20px;
     }
     .winter-resort__item{
@@ -1723,5 +1769,181 @@ body{
 
     .modal-login__overlay{
         display: none;
+    }
+}
+
+@media (max-width: 740px){
+    .header{
+        display: none;
+    }
+    .header-moblie{
+        display: block;
+    }
+    .header-moblie-nav__logo-img{
+        width: 50%;
+    }
+    .modal-login-form{
+        width: 90%;
+        left: 5%;
+    }
+    .form-login__remember{
+        padding: 15px 0;
+    }
+    .form-login__label,
+    .orm-login__lost-pass-text{
+        font-size: 1.6rem;
+    }
+    .slider-content{
+        top: 6%;
+    }
+    .slider-content .slider-layer1, .slider-content .slider-layer2, .slider-content .slider-layer3{
+        padding-top: 0px;
+    }
+    .slider-layer1{
+        font-size: 3rem;
+    }
+    .slider-layer2{
+        font-size: 4rem;
+    }
+    .slider-layer3{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .slider-transfer{
+        display: none;
+    }
+
+    .manual-for-mb,
+    .auto-btn3,
+    .auto-btn4,
+    .auto-btn5,
+    .auto-btn6{
+    display: block;
+    }
+
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -100%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -200%;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -300%;
+    }
+    #radio5:checked ~ .first{
+        margin-left: -400%;
+    }
+
+    #radio6:checked ~ .first{
+        margin-left: -500%;
+    } 
+
+    #radio3:checked ~ .slider-tour-standart__auto .auto-btn3{
+        background-color: var(--primary-color);
+    }
+
+    #radio4:checked ~ .slider-tour-standart__auto .auto-btn4{
+        background-color: var(--primary-color);
+    }
+
+    #radio5:checked ~ .slider-tour-standart__auto .auto-btn5{
+        background-color: var(--primary-color);
+    }
+    #radio6:checked ~ .slider-tour-standart__auto .auto-btn6{
+        background-color: var(--primary-color);
+    }
+
+    .slider-tour-standart__manual, .slider-tour-standart__auto, .review-user-slider__manual, .review-user-slider__auto{
+        right:34%;
+    }
+    .center-container__video {
+        padding: 60px 0;
+    }
+
+    .center-container-video__yt {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+        width: 70%;
+    }
+    .center-container-video__yt iframe{
+        height:247px;
+        width:100%;
+    }
+
+    /* Review */
+    .review-user-slider__item-inner{
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .review-user-slider__item-avartar{
+        text-align: center;
+    }
+    .review-user-slider__item-info{
+        text-align: center;
+    }
+    .review-user-slider__list-rating{
+        justify-content: center;
+    }
+    .review-user-slider__decs{
+        max-width: 95%;
+    }
+
+    #listrv1:checked ~ .user-rv-1{
+        margin-left: 0;
+    }
+    #listrv2:checked ~ .user-rv-1{
+        margin-left: -108%;
+    }
+    #listrv3:checked ~ .user-rv-1{
+        margin-left: -216%;
+    }
+    #listrv4:checked ~ .user-rv-1{
+        margin-left: -324%;
+    }
+    .auto-listrv4,
+    .manual-moblie
+    {
+        display: block;
+    }
+    .section__title{
+        font-size: 4.2rem;    
+    }
+    .review-user-section__title{
+        padding: 0;
+    }
+    .center-container__content{
+        max-width: 96%;
+    }
+    .review-user-section__text{
+        font-size: 1.5rem;
+    }
+
+    .counter-wrapper {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+ 
+    .winter-resort__item{
+        margin-left: 20px;
+    }
+    .winter-resort__item-wrapper{
+        width:90%;
+        height: 95%;
+    }
+    .winter-resort__item-standart {
+        right: 20%;
+    }
+    /* Footer */
+    .footer-list{
+        padding-left: 30px;
+    }
+    .contact-logo {
+        padding: 10px 0;
+        width: 80%;
     }
 }
